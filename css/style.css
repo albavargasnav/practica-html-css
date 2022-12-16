@@ -1,0 +1,419 @@
+/*General*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Work+Sans:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Unbounded', cursive;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*Navbar*/
+
+.navbar {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-color: #75D1E0;
+  color: white;
+  flex-direction: column;
+  padding: 20px 20px;
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+
+.navbar-items ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-items li {
+  list-style: none;
+}
+
+.navbar-items li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+@media (min-width: 426px) {
+  .navbar {
+    padding: 0px 40px;
+    justify-content: space-between;
+    flex-direction: unset;
+  }
+
+  .navbar-title {
+    padding-bottom: 0px;
+  }
+
+  .navbar-items li a {
+    padding: 1rem;
+  }
+
+  .navbar-items li:hover {
+    background-color: white;
+    transition: 0.3s;
+  }
+
+  .navbar-items li a:hover {
+    color: grey;
+  }
+}
+
+
+/*Home*/
+
+.image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.home-text {
+  position: absolute;
+  width: 90%;
+  color: white;
+  text-align: center;
+  font-size: 4.5rem;
+  margin-top: 40px;
+}
+
+.home-title {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.home-subtitle {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-family:'Work Sans', sans-serif;
+}
+
+.image-container > img {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.home-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.home-btn-details {
+  border: 2px solid white;
+  background-color: inherit;
+  border-radius: 60px;
+  color: white;
+  padding: 10px 24px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+@media (max-width: 426px) {
+  .wallpaper-web {
+    display: none;
+  }
+}
+
+@media (min-width: 425px) {
+  .wallpaper-phone {
+    display: none;
+  }
+  
+  .home-text {
+    text-align: initial;
+    padding-right: 42%;
+    top: 10vw;
+  }
+
+  .home-title {
+    font-size: 4rem;
+  }
+
+  .home-subtitle {
+    font-size: 1rem;
+  }
+
+  .home-btn {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .home-btn-details {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-text {
+    top: 25%;
+  }
+  
+  .home-title {
+    font-size: 8rem;
+  }
+
+  .home-subtitle {
+    font-size: 1.6rem;
+  }
+
+  .home-btn-details {
+    font-size: 15px;
+  }
+
+  .home-btn-details:hover {
+    background-color: white;;
+    color: turquoise;
+    transition: 0.5s;
+  }
+}
+
+/*Carousel Skills*/
+
+.carousel-projects {
+  background-color: #bbc8e5;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.projects-title {
+  margin-top: 20px;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.carousel-projects > section {
+  display: block;
+}
+
+.carousel-slides {
+  margin-top: 30px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.carousel-slides > div {
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
+.carousel-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.carousel-dot {
+  background-color: white;
+  width: 16px;
+  height: 16px;
+  margin: 0 5px;
+  display: block;
+  border-radius: 50%;
+}
+
+.slides-details {
+  width: inherit;
+}
+
+@media (min-width: 426px) {
+  .carousel-projects > section {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  .carousel-slides {
+    height: 600px;
+  }
+
+  .slides-details {
+    max-width: 900px;
+  }
+}
+
+/*Skills*/
+
+.skills-container {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white
+}
+
+.skills-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  color: Black;
+  text-align: center;
+}
+
+.progressbar-text > h3 {
+  color: black;
+  font-size: 1.2rem;
+}
+
+.progress {
+  background: #efefef;
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  display: flex;
+  height: 25px;
+  width: 342px;
+}
+
+.progress-value {
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: paleturquoise;
+  height: 20px;
+  width: 0;
+}
+
+.html {
+  animation: htmlanimation 3s normal forwards;
+}
+
+@keyframes htmlanimation {
+  0% { width: 0;}
+  100% { width: 90%;}
+}
+
+.css {
+  animation: cssanimation 3s normal forwards;
+}
+
+@keyframes cssanimation {
+  0% { width: 0;}
+  100% { width: 65%;}
+}
+
+.javascript {
+  animation: javascriptanimation 3s normal forwards;
+}
+
+@keyframes javascriptanimation {
+  0% { width: 0;}
+  100% { width: 20%;}
+}
+
+.uiux {
+  animation: uiuxanimation 3s normal forwards;
+}
+
+@keyframes uiuxanimation {
+  0% { width: 0;}
+  100% { width: 100%;}
+}
+
+.figma {
+  animation: figmaanimation 3s normal forwards;
+}
+
+@keyframes figmaanimation {
+  0% { width: 0;}
+  100% { width: 95%;}
+}
+
+/*Formulario*/
+
+.form-container {
+  background-color: paleturquoise;
+}
+
+.formulario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 40px 40px 40px;
+}
+
+
+form {
+  background-color: white;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 320px;
+}
+
+
+/*Footer*/
+
+.footer {
+  background: #bbc8e5;
+  padding: 20px;
+  color: #fff;
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+
+}
+
+.footer-title {
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-subtitle {
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.rrss-items {
+  margin-top: 30px;
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.rrss-items a{
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+}
+
+.rrss-icon {
+  width: 30px;
+}
+
+.rrss-items a{
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+}
+
+
+
+
+
