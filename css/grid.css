@@ -9,6 +9,11 @@ body {
     margin: 0;
 }
 
+.title-grid {
+    text-decoration: none;
+    color: white;
+}
+
 .text-proyectos-pagina {
     text-align: center;
 }
